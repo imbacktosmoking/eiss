@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body bgcolor="000000">
+   <!-- Centered Image -->
+<style>
+      table {
+            border-spacing: 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+</style>
+<center>
+
+    <table>
+        <tr>
+            <td><img src="41.webp" alt="Image 1"></td>
+            <td><img src="42.webp" alt="Image 2"></td>
+        </tr>
+        <tr>
+            <td><img src="43.webp" alt="Image 3"></td>
+            <td><img src="44.webp" alt="Image 4"></td>
+        </tr>
+    </table>
+
+
+<center>
+    <script>
+      function displayMessage() {
+          var userInput = document.getElementById("userInput").value;
+
+          if (userInput.trim() !== "") {
+              // Check if the input is "owen"
+              if (userInput.toLowerCase() === "owen") {
+                  document.getElementById("output").innerHTML = "  you got it click <a href='2.html'> here </a> to go to the next page";
+              } if (userInput.toLowerCase() === "enzo") {
+                  document.getElementById("output").innerHTML = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+              }
+            } if (userInput.toLowerCase() === "smurf_cat") {
+                  document.getElementById("output").innerHTML = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+              }
+      }
+  </script>
+
+<center>
+
+   <form>
+      <label for="userInput"> Enter</label>
+      <input type="text" id="userInput" name="userInput">
+      <button type="button" onclick="displayMessage()">Submit</button>
+  </form>
+  </center>
+
+  <div id="output"> </div>
+  </body>
+</html>

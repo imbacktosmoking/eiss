@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+   <!-- Centered Image -->
+    <center>
+        <img src="3.webp" alt="Centered Image">
+        
+    </center>
+
+
+   <center>
+        <img src="4.webp" alt="Centered Image">
+    </center>
+
+<center>
+    <script>
+      function displayMessage() {
+          // Get the value from the form input
+          var userInput = document.getElementById("userInput").value;
+
+          // Check if the input is not empty
+          if (userInput.trim() !== "") {
+              // Check if the input is "owen"
+              if (userInput.toLowerCase() === "owen") {
+                  document.getElementById("output").innerHTML = "  you got it click <a href='2.html'> here </a> to go to the next page";
+              } if (userInput.toLowerCase() === "enzo") {
+                  document.getElementById("output").innerHTML = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+              }
+            } if (userInput.toLowerCase() === "smurf_cat") {
+                  document.getElementById("output").innerHTML = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+              }
+      }
+  </script>
+
+<center>
+
+   <form>
+      <label for="userInput"> Enter</label>
+      <input type="text" id="userInput" name="userInput">
+      <button type="button" onclick="displayMessage()">Submit</button>
+  </form>
+  </center>
+
+  <div id="output"> </div>
+  </body>
+</html>
